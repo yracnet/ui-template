@@ -1,0 +1,19 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 8 src/scss/coreui.scss src/pages/css/coreui.css",
+    "css-watch": "nodemon -e scss -x \"npm run css-compile\"",
+    "page-server": "browser-sync start --ss src/pages -w --ignore src/scss"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.3"
+  }
+}
