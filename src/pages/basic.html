@@ -84,7 +84,8 @@
           <ul class="c-sidebar-nav-dropdown-items">
             <li class="c-sidebar-nav-item">
               <a class="c-sidebar-nav-link" href="base/breadcrumb.html">
-                <span class="c-sidebar-nav-icon"> </span> Breadcrumb
+                <span class="c-sidebar-nav-icon"> </span>
+                Breadcrumb
               </a>
             </li>
             <li class="c-sidebar-nav-item">
@@ -331,7 +332,7 @@
       <button
         class="c-sidebar-minimizer c-class-toggler"
         type="button"
-        data-target="_parent"
+        data-target="#sidebar"
         data-class="c-sidebar-minimized"
       ></button>
     </div>
@@ -539,13 +540,28 @@
         </footer>
       </div>
     </div>
-
-    <!---->
+    <!-- 
+    <script>
+      function toggle(ref, classOn, classOff) {
+        let el = document.querySelector(ref);
+        if (el) {
+          if (el.classList.contains(classOn)) {
+            el.classList.remove(classOn);
+            el.classList.add(classOff);
+          } else {
+            el.classList.remove(classOff);
+            el.classList.add(classOn);
+          }
+        }
+      }
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"
       integrity="sha384-L2pyEeut/H3mtgCBaUNw7KWzp5n9&#43;4pDQiExs933/5QfaTh8YStYFFkOzSoXjlTb"
       crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/@coreui/coreui@3.0.0-rc.0/dist/js/coreui.min.js"></script>
+    ></script><script src="https://unpkg.com/@coreui/coreui@3.0.0-rc.0/dist/js/coreui.min.js"></script>
+   -->
+    <script src="js/popper.js"></script>
+    <script src="js/coreui.js"></script>
   </body>
 </html>
