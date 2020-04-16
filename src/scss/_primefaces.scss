@@ -4,9 +4,9 @@
 .ui-dialog.ui-widget {
   @include media-breakpoint-down(breakpoint-before($mobile-breakpoint)) {
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    left: 15px !important;
+    right: 15px !important;
+    top: 15px !important;
+    bottom: 15px !important;
   }
 }

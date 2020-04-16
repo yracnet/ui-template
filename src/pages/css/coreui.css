@@ -10136,139 +10136,63 @@ body {
 }
 
 body.m-inc::after {
-  content: " 2";
-  height: 6px;
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
-  background-color: white;
+  content: "INCUBATION";
+  font-size: 75%;
+  font-family: "Arial Black";
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: black;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 2000;
-}
-
-body.m-inc .c-env {
-  position: relative;
-}
-
-body.m-inc .c-env::after {
-  content: "INCUBATION";
-  background-color: black;
-  color: white;
-  position: absolute;
-  font-size: 75%;
-  font-weight: 700;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 0 5px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  text-align: center;
 }
 
 body.m-dev::after {
-  content: " 2";
-  height: 6px;
-  border-bottom: 2px solid green;
-  border-top: 2px solid green;
-  background-color: white;
+  content: "DEVELOPER";
+  font-size: 75%;
+  font-family: "Arial Black";
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: green;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 2000;
-}
-
-body.m-dev .c-env {
-  position: relative;
-}
-
-body.m-dev .c-env::after {
-  content: "DEVELOPER";
-  background-color: green;
-  color: white;
-  position: absolute;
-  font-size: 75%;
-  font-weight: 700;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 0 5px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  text-align: center;
 }
 
 body.m-test::after {
-  content: " 2";
-  height: 6px;
-  border-bottom: 2px solid blue;
-  border-top: 2px solid blue;
-  background-color: white;
+  content: "TEST";
+  font-size: 75%;
+  font-family: "Arial Black";
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: blue;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 2000;
-}
-
-body.m-test .c-env {
-  position: relative;
-}
-
-body.m-test .c-env::after {
-  content: "TEST";
-  background-color: blue;
-  color: white;
-  position: absolute;
-  font-size: 75%;
-  font-weight: 700;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 0 5px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  text-align: center;
 }
 
 body.m-prod::after {
-  content: " 2";
-  height: 6px;
-  border-bottom: 2px solid red;
-  border-top: 2px solid red;
-  background-color: white;
+  content: "PRODUCTION";
+  font-size: 75%;
+  font-family: "Arial Black";
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: red;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 2000;
-}
-
-body.m-prod .c-env {
-  position: relative;
-}
-
-body.m-prod .c-env::after {
-  content: "PRODUCTION";
-  background-color: red;
-  color: white;
-  position: absolute;
-  font-size: 75%;
-  font-weight: 700;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 0 5px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  text-align: center;
 }
 
 body .m-info {
@@ -10290,10 +10214,10 @@ body .m-info {
 @media (max-width: 991.98px) {
   .ui-dialog.ui-widget {
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    left: 15px !important;
+    right: 15px !important;
+    top: 15px !important;
+    bottom: 15px !important;
   }
 }
 

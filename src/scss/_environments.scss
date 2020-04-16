@@ -11,35 +11,18 @@ body {
   @each $name, $color, $text in $environments {
     &.m-#{$name} {
       &::after {
-        content: " 2";
-        height: 6px;
-        border-bottom: 2px solid #{$color};
-        border-top: 2px solid #{$color};
-        background-color: white;
+        content: "#{$text}";
+        font-size: $badge-font-size;
+        font-family: "Arial Black";
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        background-color: #{$color};
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         z-index: 2000;
-      }
-      .c-env {
-        position: relative;
-        &::after {
-          content: "#{$text}";
-          background-color: #{$color};
-          color: white;
-          position: absolute;
-          @include font-size($badge-font-size);
-          font-weight: $badge-font-weight;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          padding: 0 5px;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          text-align: center;
-        }
       }
     }
   }
