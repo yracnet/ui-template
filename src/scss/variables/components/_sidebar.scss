@@ -21,7 +21,7 @@ $sidebar-backdrop-bg:       $black !default;
 $sidebar-backdrop-opacity:  .5 !default;
 
 $sidebar-dark-color:    $white !default;
-$sidebar-dark-bg:       $gray-base !default;
+$sidebar-dark-bg:       #043e60;//$gray-base !default;
 $sidebar-dark-borders:  none !default;
 
 $sidebar-light-color:    $body-color !default;
@@ -85,12 +85,12 @@ $sidebar-light-nav-link-borders:     0 !default;
 
 
 $sidebar-dark-nav-link-hover-color:       $white !default;
-$sidebar-dark-nav-link-hover-bg:          theme-color("primary") !default;
+$sidebar-dark-nav-link-hover-bg:          #012f50 !default;
 $sidebar-dark-nav-link-hover-icon-color:  $white !default;
 $sidebar-dark-nav-link-hover-borders:     0 !default;
 
 $sidebar-light-nav-link-hover-color:       $white !default;
-$sidebar-light-nav-link-hover-bg:          theme-color("primary") !default;
+$sidebar-light-nav-link-hover-bg:          #012f50 !default;
 $sidebar-light-nav-link-hover-icon-color:  $white !default;
 $sidebar-light-nav-link-hover-borders:     0 !default;
 

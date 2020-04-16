@@ -722,6 +722,7 @@
   .c-sidebar-nav-link {
     color: themes-get-value("sidebar-nav-link-color");
     background: themes-get-value("sidebar-nav-link-bg");
+    border-left: 4px solid themes-get-value("sidebar-nav-link-bg");
     @include borders(themes-get-value("sidebar-nav-link-borders"));
 
     .c-sidebar-nav-icon {
@@ -739,6 +740,8 @@
     }
 
     &:hover {
+      font-weight: bold;
+      border-left: 4px solid white;
       color: themes-get-value("sidebar-nav-link-hover-color");
       background: themes-get-value("sidebar-nav-link-hover-bg");
       @include borders(themes-get-value("sidebar-nav-link-hover-borders"));
