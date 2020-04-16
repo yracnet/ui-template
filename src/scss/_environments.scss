@@ -1,0 +1,60 @@
+// ...
+
+$environments: (
+  ("inc", "black", "INCUBATION"),
+  ("dev", "green", "DEVELOPER"),
+  ("test", "blue", "TEST"),
+  ("prod", "red", "PRODUCTION")
+);
+
+body {
+  @each $name, $color, $text in $environments {
+    &.m-#{$name} {
+      &::after {
+        content: " 2";
+        height: 6px;
+        border-bottom: 2px solid #{$color};
+        border-top: 2px solid #{$color};
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2000;
+      }
+      .c-env {
+        position: relative;
+        &::after {
+          content: "#{$text}";
+          background-color: #{$color};
+          color: white;
+          position: absolute;
+          @include font-size($badge-font-size);
+          font-weight: $badge-font-weight;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          padding: 0 5px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .m-info {
+    z-index: 99999;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    &::after {
+      @include media-breakpoint-down(breakpoint-before($mobile-breakpoint)) {
+        content: " MOBIL ";
+      }
+    }
+  }
+}
