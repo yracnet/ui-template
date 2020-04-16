@@ -1,12 +1,16 @@
 // Primefaces Behaivor
 
 // Dialog Modal
-.ui-dialog.ui-widget {
+.ui-dialog {
   @include media-breakpoint-down(breakpoint-before($mobile-breakpoint)) {
     position: absolute;
     left: 15px !important;
     right: 15px !important;
     top: 15px !important;
     bottom: 15px !important;
+    .ui-dialog-content {
+      overflow: auto !important;
+      height: 90% !important;
+    }
   }
 }
