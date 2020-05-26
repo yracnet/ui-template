@@ -24,6 +24,34 @@ div:not(.ui-confirm-dialog){
     z-index: 2000;
     right: 15px;
 }
-.ui-widget.btn{
-  color: white !important;
+.ui-button,
+.ui-widget {
+  @import "buttons";
+  &.btn {
+    > .ui-button-text {
+      padding: 0 0 0 0 !important;
+    }
+    > .ui-icon+.ui-button-text {
+      padding: 0 0 0 1.3em !important;
+    }
+  }
+}
+
+
+//remove default color from primefaces
+.table{
+  .ui-datatable-even,
+  .ui-datatable-odd{
+    background-color: white;
+  }
+  >thead>tr>th{
+    font-size: 90%;
+    font-weight: $font-weight-normal;
+    background-color: white!important;
+    border-bottom: (2 * $table-border-width) solid;
+  }
+  >tbody>tr>td{
+    font-weight: $font-weight-normal;
+    font-size: 90%;
+  }
 }

@@ -1,48 +1,50 @@
 //
 // CoreUI default gradients
 //
-
+/*
 $primary-gradient: (
-  "start":  #321fdb,
-  "stop":   #1f1498
+  "start":  lighten( $primary-base, 45.7),
+  "stop":   lighten( $primary-base, 5.7)
 ) !default;
 
 $secondary-gradient: (
-  "start":  #c8d2dc,
-  "stop":    $white
+  "start":  lighten( $secondary-base, 45.7),
+  "stop":   lighten( $secondary-base, 5.7)
 ) !default;
 
 $light-gradient: (
-  "start":  #e3e8ed,
-  "stop":    $white
+  "start":  $light-50,
+  "stop":   $light-dark
 ) !default;
 
 $dark-gradient: (
-  "start":  #3c4b64,
-  "stop":   #212333
+  "start":  $dark-50,
+  "stop":   $dark-dark
 ) !default;
 
 $danger-gradient: (
-  "start":  #e55353,
-  "stop":   #d93737
+  "start":  $danger-50,
+  "stop":   $danger-dark
 ) !default;
 
 $warning-gradient: (
-  "start":  #f9b115,
-  "stop":   #f6960b
+  "start":  $warning-50,
+  "stop":   $warning-dark
 ) !default;
 
 $success-gradient: (
-  "start":  #2eb85c,
-  "stop":   #1b9e3e
+  "start":  $success-50,
+  "stop":   $success-dark
 ) !default;
 
 $info-gradient: (
-  "start":  #39f,
-  "stop":   #2982cc
+  "start":  $info-50,
+  "stop":   $info-dark
 ) !default;
 
+*/
 $theme-gradients: () !default;
+/*
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-gradients: map-merge(
   (
@@ -57,3 +59,4 @@ $theme-gradients: map-merge(
   ),
   $theme-gradients
 );
+/**/
