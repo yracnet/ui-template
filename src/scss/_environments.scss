@@ -1,10 +1,10 @@
 // ...
 
 $environments: (
-  ("inc", "black", "INCUBATION"),
-  ("dev", "green", "DEVELOPER"),
-  ("test", "blue", "TEST"),
-  ("prod", "red", "PRODUCTION")
+  ("incubation", "black", "INCUBATION"),
+  ("development", "green", "DEVELOPMENT"),
+  ("testing", "blue", "TESTING"),
+  ("production", "red", "PRODUCTION")
 );
 
 body {
@@ -12,17 +12,18 @@ body {
     &.m-#{$name} {
       &::after {
         content: "#{$text}";
-        font-size: $badge-font-size;
         font-family: "Arial Black";
         font-weight: bold;
         text-align: center;
         color: white;
         background-color: #{$color};
         position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
+        top: 35px;
+        left: -30px;
+        right: auto;
         z-index: 2000;
+        min-width: 150px;
+        transform: rotate(-45deg);
       }
     }
   }

@@ -93,6 +93,15 @@ $dark:   $gray-800 !default;
 
 $pink:  #e83e8c !default;
 
+//Color BCB
+$primary:    #043e60;
+$secondary:  #043e60d5;
+$success:    #4dbd74;
+$info:       #63c2de;
+$warning:    #ffc107;
+$danger:     #f86c6b;
+$light:      #f0f3f5;
+$dark:       #2f353a;
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors: map-merge(
