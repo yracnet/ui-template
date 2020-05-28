@@ -32,6 +32,7 @@
     }
   }
 
+  /*
   // Bring the "active" form control to the top of surrounding elements
   > .form-control:focus,
   > .custom-select:focus,
@@ -43,6 +44,7 @@
   > .custom-file .custom-file-input:focus {
     z-index: 4;
   }
+  */
 
   > .form-control,
   > .custom-select {
@@ -63,7 +65,6 @@
       }
     }
   }
-
   // Custom file inputs have more complex markup, thus requiring different
   // border-radius overrides.
   > .custom-file {
@@ -89,6 +90,7 @@
     }
   }
 }
+
 
 
 // Prepend and append

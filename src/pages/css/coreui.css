@@ -3169,6 +3169,7 @@ html:not([dir="rtl"]) .dropleft .dropdown-toggle:empty::after {
   border-top: 1px solid #d8dbe0;
 }
 
+.form-control2,
 .form-control {
   display: block;
   width: 100%;
@@ -3187,21 +3188,25 @@ html:not([dir="rtl"]) .dropleft .dropdown-toggle:empty::after {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .form-control2,
   .form-control {
     transition: none;
   }
 }
 
+.form-control2::-ms-expand,
 .form-control::-ms-expand {
   background-color: transparent;
   border: 0;
 }
 
+.form-control2:-moz-focusring,
 .form-control:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 #768192;
 }
 
+.form-control2:focus,
 .form-control:focus {
   color: #768192;
   background-color: #fff;
@@ -3210,12 +3215,15 @@ html:not([dir="rtl"]) .dropleft .dropdown-toggle:empty::after {
   box-shadow: 0 0 0 0.2rem rgba(4, 62, 96, 0.25);
 }
 
+.form-control2::placeholder,
 .form-control::placeholder {
   color: #8a93a2;
   opacity: 1;
 }
 
-.form-control:disabled, .form-control[readonly] {
+.form-control2:disabled, .form-control2[readonly],
+.form-control:disabled,
+.form-control[readonly] {
   background-color: #d8dbe0;
   opacity: 1;
 }
@@ -5068,6 +5076,19 @@ html:not([dir="rtl"]) .c-header-nav .c-header-nav-link .badge, html:not([dir="rt
   flex-wrap: wrap;
   align-items: stretch;
   width: 100%;
+  /*
+  // Bring the "active" form control to the top of surrounding elements
+  > .form-control:focus,
+  > .custom-select:focus,
+  > .custom-file .custom-file-input:focus ~ .custom-file-label {
+    z-index: 3;
+  }
+
+  // Bring the custom file input above the label
+  > .custom-file .custom-file-input:focus {
+    z-index: 4;
+  }
+  */
 }
 
 .input-group > .form-control,
@@ -5093,16 +5114,6 @@ html:not([dir="rtl"]) .input-group > .form-control + .form-control, html:not([di
 .input-group > .custom-file + .custom-select, html:not([dir="rtl"])
 .input-group > .custom-file + .custom-file {
   margin-left: -1px;
-}
-
-.input-group > .form-control:focus,
-.input-group > .custom-select:focus,
-.input-group > .custom-file .custom-file-input:focus ~ .custom-file-label {
-  z-index: 3;
-}
-
-.input-group > .custom-file .custom-file-input:focus {
-  z-index: 4;
 }
 
 html:not([dir="rtl"]) .input-group > .form-control:not(:last-child), html:not([dir="rtl"])
@@ -13531,13 +13542,16 @@ body.m-incubation::after {
   font-weight: bold;
   text-align: center;
   color: white;
+  border: 5px solid white;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background-color: black;
   position: absolute;
-  top: 35px;
-  left: -30px;
+  top: 30px;
+  left: -50px;
   right: auto;
   z-index: 2000;
-  min-width: 150px;
+  min-width: 200px;
   transform: rotate(-45deg);
 }
 
@@ -13547,13 +13561,16 @@ body.m-development::after {
   font-weight: bold;
   text-align: center;
   color: white;
+  border: 5px solid white;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background-color: green;
   position: absolute;
-  top: 35px;
-  left: -30px;
+  top: 30px;
+  left: -50px;
   right: auto;
   z-index: 2000;
-  min-width: 150px;
+  min-width: 200px;
   transform: rotate(-45deg);
 }
 
@@ -13563,13 +13580,35 @@ body.m-testing::after {
   font-weight: bold;
   text-align: center;
   color: white;
+  border: 5px solid white;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background-color: blue;
   position: absolute;
-  top: 35px;
-  left: -30px;
+  top: 30px;
+  left: -50px;
   right: auto;
   z-index: 2000;
-  min-width: 150px;
+  min-width: 200px;
+  transform: rotate(-45deg);
+}
+
+body.m-certification::after {
+  content: "CERTIFICATION";
+  font-family: "Arial Black";
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  border: 5px solid white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: orange;
+  position: absolute;
+  top: 30px;
+  left: -50px;
+  right: auto;
+  z-index: 2000;
+  min-width: 200px;
   transform: rotate(-45deg);
 }
 
@@ -13579,13 +13618,16 @@ body.m-production::after {
   font-weight: bold;
   text-align: center;
   color: white;
+  border: 5px solid white;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background-color: red;
   position: absolute;
-  top: 35px;
-  left: -30px;
+  top: 30px;
+  left: -50px;
   right: auto;
   z-index: 2000;
-  min-width: 150px;
+  min-width: 200px;
   transform: rotate(-45deg);
 }
 
@@ -15913,6 +15955,13 @@ body .m-info {
 .table > tbody > tr > td {
   font-weight: 400;
   font-size: 90%;
+}
+
+.bcb-input-filter .ui-selectonemenu.form-control {
+  padding: 0 !important;
+  margin: 0 !important;
+  min-width: 40px !important;
+  width: auto !important;
 }
 
 /*# sourceMappingURL=coreui.css.map */

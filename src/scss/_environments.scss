@@ -4,6 +4,7 @@ $environments: (
   ("incubation", "black", "INCUBATION"),
   ("development", "green", "DEVELOPMENT"),
   ("testing", "blue", "TESTING"),
+  ("certification", "orange", "CERTIFICATION"),
   ("production", "red", "PRODUCTION")
 );
 
@@ -16,13 +17,16 @@ body {
         font-weight: bold;
         text-align: center;
         color: white;
+        border: 5px solid white;
+        padding-top: 5px;
+        padding-bottom: 5px;
         background-color: #{$color};
         position: absolute;
-        top: 35px;
-        left: -30px;
+        top: 30px;
+        left: -50px;
         right: auto;
         z-index: 2000;
-        min-width: 150px;
+        min-width: 200px;
         transform: rotate(-45deg);
       }
     }

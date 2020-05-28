@@ -55,3 +55,13 @@ div:not(.ui-confirm-dialog){
     font-size: 90%;
   }
 }
+.bcb-input-filter{
+  .ui-selectonemenu.form-control{
+    padding: 0!important;
+    margin: 0!important;
+    min-width: 40px!important;
+    width: auto!important;
+  }
+}
+//input filter
+
