@@ -3169,7 +3169,6 @@ html:not([dir="rtl"]) .dropleft .dropdown-toggle:empty::after {
   border-top: 1px solid #d8dbe0;
 }
 
-.form-control2,
 .form-control {
   display: block;
   width: 100%;
@@ -3188,25 +3187,21 @@ html:not([dir="rtl"]) .dropleft .dropdown-toggle:empty::after {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .form-control2,
   .form-control {
     transition: none;
   }
 }
 
-.form-control2::-ms-expand,
 .form-control::-ms-expand {
   background-color: transparent;
   border: 0;
 }
 
-.form-control2:-moz-focusring,
 .form-control:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 #768192;
 }
 
-.form-control2:focus,
 .form-control:focus {
   color: #768192;
   background-color: #fff;
@@ -3215,15 +3210,12 @@ html:not([dir="rtl"]) .dropleft .dropdown-toggle:empty::after {
   box-shadow: 0 0 0 0.2rem rgba(4, 62, 96, 0.25);
 }
 
-.form-control2::placeholder,
 .form-control::placeholder {
   color: #8a93a2;
   opacity: 1;
 }
 
-.form-control2:disabled, .form-control2[readonly],
-.form-control:disabled,
-.form-control[readonly] {
+.form-control:disabled, .form-control[readonly] {
   background-color: #d8dbe0;
   opacity: 1;
 }
