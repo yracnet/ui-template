@@ -3945,6 +3945,50 @@ html:not([dir="rtl"]) .was-validated .custom-select:invalid, html:not([dir="rtl"
   margin-left: 91.66666667%;
 }
 
+.offset-left-1 {
+  margin-right: 8.33333333%;
+}
+
+.offset-left-2 {
+  margin-right: 16.66666667%;
+}
+
+.offset-left-3 {
+  margin-right: 25%;
+}
+
+.offset-left-4 {
+  margin-right: 33.33333333%;
+}
+
+.offset-left-5 {
+  margin-right: 41.66666667%;
+}
+
+.offset-left-6 {
+  margin-right: 50%;
+}
+
+.offset-left-7 {
+  margin-right: 58.33333333%;
+}
+
+.offset-left-8 {
+  margin-right: 66.66666667%;
+}
+
+.offset-left-9 {
+  margin-right: 75%;
+}
+
+.offset-left-10 {
+  margin-right: 83.33333333%;
+}
+
+.offset-left-11 {
+  margin-right: 91.66666667%;
+}
+
 @media (min-width: 576px) {
   .col-sm {
     flex-basis: 0;
@@ -4108,6 +4152,42 @@ html:not([dir="rtl"]) .was-validated .custom-select:invalid, html:not([dir="rtl"
   }
   .offset-sm-11 {
     margin-left: 91.66666667%;
+  }
+  .offset-left-sm-0 {
+    margin-right: 0;
+  }
+  .offset-left-sm-1 {
+    margin-right: 8.33333333%;
+  }
+  .offset-left-sm-2 {
+    margin-right: 16.66666667%;
+  }
+  .offset-left-sm-3 {
+    margin-right: 25%;
+  }
+  .offset-left-sm-4 {
+    margin-right: 33.33333333%;
+  }
+  .offset-left-sm-5 {
+    margin-right: 41.66666667%;
+  }
+  .offset-left-sm-6 {
+    margin-right: 50%;
+  }
+  .offset-left-sm-7 {
+    margin-right: 58.33333333%;
+  }
+  .offset-left-sm-8 {
+    margin-right: 66.66666667%;
+  }
+  .offset-left-sm-9 {
+    margin-right: 75%;
+  }
+  .offset-left-sm-10 {
+    margin-right: 83.33333333%;
+  }
+  .offset-left-sm-11 {
+    margin-right: 91.66666667%;
   }
 }
 
@@ -4275,6 +4355,42 @@ html:not([dir="rtl"]) .was-validated .custom-select:invalid, html:not([dir="rtl"
   .offset-md-11 {
     margin-left: 91.66666667%;
   }
+  .offset-left-md-0 {
+    margin-right: 0;
+  }
+  .offset-left-md-1 {
+    margin-right: 8.33333333%;
+  }
+  .offset-left-md-2 {
+    margin-right: 16.66666667%;
+  }
+  .offset-left-md-3 {
+    margin-right: 25%;
+  }
+  .offset-left-md-4 {
+    margin-right: 33.33333333%;
+  }
+  .offset-left-md-5 {
+    margin-right: 41.66666667%;
+  }
+  .offset-left-md-6 {
+    margin-right: 50%;
+  }
+  .offset-left-md-7 {
+    margin-right: 58.33333333%;
+  }
+  .offset-left-md-8 {
+    margin-right: 66.66666667%;
+  }
+  .offset-left-md-9 {
+    margin-right: 75%;
+  }
+  .offset-left-md-10 {
+    margin-right: 83.33333333%;
+  }
+  .offset-left-md-11 {
+    margin-right: 91.66666667%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -4441,6 +4557,42 @@ html:not([dir="rtl"]) .was-validated .custom-select:invalid, html:not([dir="rtl"
   .offset-lg-11 {
     margin-left: 91.66666667%;
   }
+  .offset-left-lg-0 {
+    margin-right: 0;
+  }
+  .offset-left-lg-1 {
+    margin-right: 8.33333333%;
+  }
+  .offset-left-lg-2 {
+    margin-right: 16.66666667%;
+  }
+  .offset-left-lg-3 {
+    margin-right: 25%;
+  }
+  .offset-left-lg-4 {
+    margin-right: 33.33333333%;
+  }
+  .offset-left-lg-5 {
+    margin-right: 41.66666667%;
+  }
+  .offset-left-lg-6 {
+    margin-right: 50%;
+  }
+  .offset-left-lg-7 {
+    margin-right: 58.33333333%;
+  }
+  .offset-left-lg-8 {
+    margin-right: 66.66666667%;
+  }
+  .offset-left-lg-9 {
+    margin-right: 75%;
+  }
+  .offset-left-lg-10 {
+    margin-right: 83.33333333%;
+  }
+  .offset-left-lg-11 {
+    margin-right: 91.66666667%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -4606,6 +4758,42 @@ html:not([dir="rtl"]) .was-validated .custom-select:invalid, html:not([dir="rtl"
   }
   .offset-xl-11 {
     margin-left: 91.66666667%;
+  }
+  .offset-left-xl-0 {
+    margin-right: 0;
+  }
+  .offset-left-xl-1 {
+    margin-right: 8.33333333%;
+  }
+  .offset-left-xl-2 {
+    margin-right: 16.66666667%;
+  }
+  .offset-left-xl-3 {
+    margin-right: 25%;
+  }
+  .offset-left-xl-4 {
+    margin-right: 33.33333333%;
+  }
+  .offset-left-xl-5 {
+    margin-right: 41.66666667%;
+  }
+  .offset-left-xl-6 {
+    margin-right: 50%;
+  }
+  .offset-left-xl-7 {
+    margin-right: 58.33333333%;
+  }
+  .offset-left-xl-8 {
+    margin-right: 66.66666667%;
+  }
+  .offset-left-xl-9 {
+    margin-right: 75%;
+  }
+  .offset-left-xl-10 {
+    margin-right: 83.33333333%;
+  }
+  .offset-left-xl-11 {
+    margin-right: 91.66666667%;
   }
 }
 

@@ -58,11 +58,22 @@
         .order#{$infix}-#{$i} { order: $i; }
       }
 
+      // offset-right
       // `$columns - 1` because offsetting by the width of an entire row isn't possible
       @for $i from 0 through ($columns - 1) {
         @if not ($infix == "" and $i == 0) { // Avoid emitting useless .offset-0
           .offset#{$infix}-#{$i} {
             @include make-col-offset($i, $columns);
+          }
+        }
+      }
+
+      // offset-left
+      // `$columns - 1` because offsetting by the width of an entire row isn't possible
+      @for $i from 0 through ($columns - 1) {
+        @if not ($infix == "" and $i == 0) { // Avoid emitting useless .offset-0
+          .offset-left#{$infix}-#{$i} {
+            @include make-col-offset-left($i, $columns);
           }
         }
       }
