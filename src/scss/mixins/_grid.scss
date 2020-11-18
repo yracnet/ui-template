@@ -56,7 +56,7 @@
   margin-left: if($num == 0, 0, percentage($num));
 }
 
-@mixin make-col-offset-left($size, $columns: $grid-columns) {
+@mixin make-col-offset-right($size, $columns: $grid-columns) {
   $num: $size / $columns;
   margin-right: if($num == 0, 0, percentage($num));
 }
